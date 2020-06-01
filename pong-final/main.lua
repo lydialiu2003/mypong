@@ -558,8 +558,7 @@ function love.draw()
         -- UI messages
         if gameMode == 'pvp' then
          love.graphics.setFont(smallFont)
-         love.graphics.printf('Player ' .. tostring(servingPlayer) .. "'s serve!", 
-            0, 10, VIRTUAL_WIDTH, 'center')
+         love.graphics.printf('Player ' .. tostring(servingPlayer) .. "'s serve!", 0, 10, VIRTUAL_WIDTH, 'center')
          love.graphics.printf('Press Enter to serve!', 0, 20, VIRTUAL_WIDTH, 'center')
          elseif gameMode == 'pvc' then
             if (side == 'left' and servingPlayer == 1) or (side == 'right' and servingPlayer == 2) then
@@ -584,8 +583,7 @@ function love.draw()
 
        if gameMode == 'pvp' then
     love.graphics.setFont(largeFont)
-        love.graphics.printf('Player ' .. tostring(winningPlayer) .. ' wins!',
-            0, 10, VIRTUAL_WIDTH, 'center')
+        love.graphics.printf('Player ' .. tostring(winningPlayer) .. ' wins!', 0, 10, VIRTUAL_WIDTH, 'center')
         love.graphics.setFont(smallFont)
         love.graphics.printf('Press Enter to restart!', 0, 50, VIRTUAL_WIDTH, 'center')
        
